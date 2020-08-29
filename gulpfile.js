@@ -18,7 +18,7 @@ var config = {
   server: {
     baseDir: "./build"
   },
-  tunnel: true,
+  tunnel: false,
   host: "localhost",
   port: 9000,
   logPrefix: "Frontend_Devil"
@@ -34,7 +34,7 @@ var path = {
     webfonts: "build/webfonts/"
   },
   src: {
-    html: "src/*.pug",
+    html: "src/*.html",
     js: "src/js/main.js",
     style: "src/style/*.sass",
     img: "src/img/**/*.*",
@@ -42,7 +42,7 @@ var path = {
     webfonts: "src/webfonts/**/*.*"
   },
   watch: {
-    html: "src/**/*.pug", // PUG or HTML file here
+    html: "src/**/*.html", // PUG or HTML file here
     js: "src/js/**/*.js",
     style: "src/style/**/*.sass",
     img: "src/img/**/*.*",
