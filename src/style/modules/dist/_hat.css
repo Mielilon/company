@@ -1,0 +1,27 @@
+.hat {
+  height: 100vh;
+  background-image: url("./../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hat .content {
+  height: 100vh;
+  display: flex;
+}
+.hat__info-wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #C8A35F;
+  padding: 45px 72px;
+}
+.hat__description {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  max-width: 700px;
+  margin-top: 0;
+}

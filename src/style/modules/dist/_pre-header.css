@@ -1,0 +1,11 @@
+.pre-header {
+  background-color: #C8A35F;
+}
+.pre-header .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.pre-header__item-description_active {
+  opacity: 75%;
+}

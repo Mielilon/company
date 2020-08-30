@@ -1,0 +1,31 @@
+.pre-header {
+  background-color: #C8A35F;
+}
+.pre-header .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.pre-header__item-description_active {
+  opacity: 75%;
+}
+
+.header {
+  background-color: #2F343A;
+  padding: 25px 0;
+}
+.header .content {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  border-right: solid 1px white;
+  padding-right: 30px;
+}
+.header__location-wrapper {
+  padding-left: 30px;
+}
