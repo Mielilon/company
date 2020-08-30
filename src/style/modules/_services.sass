@@ -1,3 +1,22 @@
 .services
-    background-color: #2F343A
-    
+    & .content
+        margin: 120px 0
+    &__item
+        background-color: #393F47
+        border: solid 3px #2F343A
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 40px 8px 0
+        &_img
+            width: 35px
+        &_description
+            font-weight: bold
+            font-size: 14px
+            line-height: 22px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            text-align: center
+    &-wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr

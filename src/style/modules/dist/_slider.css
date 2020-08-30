@@ -1,5 +1,4 @@
 .slider {
-  background-color: #2F343A;
   position: relative;
 }
 .slider::before, .slider::after {
@@ -32,7 +31,6 @@
   width: 445px;
 }
 .slider__control {
-  z-index: 100;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
@@ -48,6 +46,7 @@
   text-transform: uppercase;
   color: #C8A35F;
   position: relative;
+  z-index: 11;
 }
 .slider__control_next::before, .slider__control_next::after, .slider__control_pre::before, .slider__control_pre::after {
   content: "";
