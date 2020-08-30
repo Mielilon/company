@@ -21,3 +21,37 @@
         position: absolute
         background: #C8A35F
         top: -40px
+
+.statistics
+    display: grid
+    grid-template-columns: 250px 250px 
+    grid-auto-rows: 200px 200px
+    width: 50%
+    &__item
+        background-color: white
+        border: 0.25px solid #C8A35F
+        padding: 10px
+        color: #2F343A
+        text-align: center
+        &_title
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 75px;
+            margin: 0
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        &_title-description
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase
+            margin: 0
+            margin-top: 10px
+        &_description
+            font-size: 16px;
+            margin: 20px
+        &_img
+            background-image: url('./../img/stat.png')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover

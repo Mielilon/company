@@ -28,3 +28,16 @@
   background: #C8A35F;
   top: -40px;
 }
+
+.statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+}
+.statistics__item {
+  background-color: white;
+  border: 0.25px solid #C8A35F;
+  padding: 10px;
+  color: #2F343A;
+  text-align: center;
+}
