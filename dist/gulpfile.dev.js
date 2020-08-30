@@ -70,7 +70,7 @@ var path = {
 gulp.task("html:build", function () {
   gulp.src(path.src.html) //Выберем файлы по нужному пути
   .pipe(plumber()).pipe(rigger()) //Прогоним через rigger
-  .pipe(pug()) // remove if use HTML
+  //.pipe(pug()) // remove if use HTML
   .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
   .pipe(reload({
     stream: true

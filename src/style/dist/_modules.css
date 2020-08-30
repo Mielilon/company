@@ -16,3 +16,15 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+.title-decoration {
+  position: relative;
+}
+.title-decoration::before {
+  content: "";
+  width: 90px;
+  height: 6px;
+  position: absolute;
+  background: #C8A35F;
+  top: -40px;
+}

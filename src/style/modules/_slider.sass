@@ -1,0 +1,82 @@
+.slider 
+    background-color: #2F343A
+    position: relative
+    &::before, &::after
+        content: ''
+        height: 100%
+        width: 35%
+        background-color: #393F47
+        position: absolute
+    &::before
+        top: 0
+        left: 0
+    &::after
+        top: 0
+        right: 0
+    & .content
+        justify-content: space-between
+        display: flex
+        margin: 120px 0
+        align-items: center
+    &-wrapper
+        display: flex
+        align-items: center
+    &__img
+        z-index: 10
+        width: 445px
+    &__control
+        z-index: 100
+        margin-left: 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 266px
+        &_next, &_pre
+            font-weight: 500
+            font-size: 16px
+            line-height: 25px
+            text-align: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #C8A35F
+            position: relative
+            &::before, &::after
+                content: ''
+                position: absolute
+                color: #C8A35F
+                border: solid 3px #C8A35F
+        &_next, &_pre
+            &::before
+                width: 60px
+                border-top: none
+                border-left: none
+                border-right: none
+                z-index: 101
+            &::after
+                width: 20px
+                height: 20px
+                border-top: none
+                border-left: none
+                border-radius: 3px
+                z-index: 101
+                
+        &_next
+            padding-right: 100px
+            &::before
+                right: 15px
+                top: 50%
+            &::after
+                transform: rotate(310deg)
+                right: 16px
+                top: 3px
+        &_pre
+            padding-left: 100px
+            &::before
+                left: 15px
+                top: 50%
+            &::after
+                transform: rotate(140deg)
+                left: 16px
+                top: 3px
+                
+            
