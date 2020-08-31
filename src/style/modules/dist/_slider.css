@@ -47,6 +47,10 @@
   color: #C8A35F;
   position: relative;
   z-index: 11;
+  cursor: pointer;
+}
+.slider__control_next:hover, .slider__control_pre:hover {
+  opacity: 75%;
 }
 .slider__control_next::before, .slider__control_next::after, .slider__control_pre::before, .slider__control_pre::after {
   content: "";
