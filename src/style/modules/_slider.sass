@@ -3,7 +3,7 @@
     &::before, &::after
         content: ''
         height: 100%
-        width: 35%
+        width: 40%
         background-color: #393F47
         position: absolute
     &::before
@@ -13,72 +13,40 @@
         top: 0
         right: 0
     & .content
-        justify-content: space-between
         display: flex
         margin: 120px 0
         align-items: center
-    &-wrapper
-        display: flex
-        align-items: center
+        justify-content: flex-start
     &__img
+        width: 600px
         z-index: 10
-        width: 445px
-    &__control
-        margin-left: 20px
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        height: 266px
-        &_next, &_pre
-            font-weight: 500
-            font-size: 16px
-            line-height: 25px
-            text-align: center
-            letter-spacing: 0.1em
-            text-transform: uppercase
-            color: #C8A35F
-            position: relative
-            z-index: 11
-            cursor: pointer
-            &:hover
-                opacity: 75%
-            &::before, &::after
-                content: ''
-                position: absolute
-                color: #C8A35F
-                border: solid 3px #C8A35F
-        &_next, &_pre
-            &::before
-                width: 60px
-                border-top: none
-                border-left: none
-                border-right: none
-                z-index: 101
-            &::after
-                width: 20px
-                height: 20px
-                border-top: none
-                border-left: none
-                border-radius: 3px
-                z-index: 101
-                
-        &_next
-            padding-right: 100px
-            &::before
-                right: 15px
-                top: 50%
-            &::after
-                transform: rotate(310deg)
-                right: 16px
-                top: 3px
-        &_pre
-            padding-left: 100px
-            &::before
-                left: 15px
-                top: 50%
-            &::after
-                transform: rotate(140deg)
-                left: 16px
-                top: 3px
-                
-            
+        margin-left: 60px
+.info-wrapper
+    z-index: 1000
+
+@include respond-to(lg) 
+    .slider 
+        &__img
+            width: 500px
+
+@include respond-to(md) 
+    .slider 
+        &__img
+            width: 350px
+@include respond-to(sm) 
+    .slider 
+        &__img
+            width: 300px
+            margin-left: 0px
+@media screen and (max-width: 440px)
+    .slider 
+        & .content
+            display: flex
+            flex-direction: column
+            margin: 120px 0 50px
+            align-items: start
+        &__img
+            width: 300px
+            margin-left: -30px
+            margin-top: 30px
+    

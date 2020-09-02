@@ -51,6 +51,9 @@ h2
   line-height: 49px
   letter-spacing: 0.05em
   text-transform: uppercase
+@include respond-to(md) 
+  h2
+    font-size: 30px
 h3
   font-size: 2rem
   margin: 15px 0
@@ -61,6 +64,9 @@ p
   font-size: 18px
   line-height: 28px
   margin: 30px 0
+@include respond-to(md) 
+  p
+    font-size: 16px
 
 .ttu
   text-transform: uppercase
@@ -83,6 +89,10 @@ p
   cursor: pointer
   &:hover
     opacity: .75
+@include respond-to(sm) 
+  .button
+    padding: 16px 30px
+    font-size: 14px
 
 .flex 
   display: flex
@@ -92,3 +102,6 @@ p
 
 .info-wrapper
   width: 30%
+@media screen and (max-width: 440px)
+  .info-wrapper
+    width: 100%

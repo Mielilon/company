@@ -30,6 +30,7 @@
     grid-template-columns: 250px 250px 
     grid-auto-rows: 200px 200px
     width: 50%
+    margin-right: 20px
     &__item
         background-color: white
         border: 0.25px solid #C8A35F
@@ -37,16 +38,16 @@
         color: #2F343A
         text-align: center
         &_title
-            font-weight: bold;
-            font-size: 64px;
-            line-height: 75px;
+            font-weight: bold
+            font-size: 64px
+            line-height: 75px
             margin: 0
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
+            letter-spacing: 0.05em
+            text-transform: uppercase
         &_title-description
-            font-size: 18px;
-            line-height: 21px;
-            letter-spacing: 0.05em;
+            font-size: 18px
+            line-height: 21px
+            letter-spacing: 0.05em
             text-transform: uppercase
             margin: 0
             margin-top: 10px
@@ -58,6 +59,33 @@
             background-repeat: no-repeat
             background-position: center
             background-size: cover
-
+@include respond-to(lg) 
+    .statistics
+        grid-template-columns: 180px 180px 
+        grid-template-rows: 160px 160px
+        width: 100%
+        margin: 20px 10px 100px
+        &__item
+            &_title
+                font-size: 48px
+                line-height: 58px
+            &_title-description
+                font-size: 16px
+                line-height: 18px
+            &_description
+                font-size: 16px
+                margin: 10px
+@media screen and ( max-width: 400px)
+    .statistics
+        grid-template-columns: 140px 140px 
+        grid-template-rows: 130px 130px
+        &__item
+            &_title
+                font-size: 38px
+                line-height: 45px
+            &_description
+                font-size: 14px
+                margin: 5px
+    
 .hamburger
     display: none
