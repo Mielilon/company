@@ -3,6 +3,7 @@
     & .content 
         display: flex
         justify-content: space-between
+        align-items: center
     &__item
         display: flex
         align-items: center
@@ -11,3 +12,71 @@
         padding-right: 30px
     &__location-wrapper
         padding-left: 30px
+@include respond-to(lg) 
+    .menu
+        display: none
+    .hamburger 
+        display: block
+        z-index: 10
+        transition: 0.25s ease
+        &__button
+            padding: 0
+            border: none
+            background-color: transparent
+            outline: none
+            cursor: pointer
+            position: relative
+        &__button img 
+            width: 35px
+        &.sticky
+            box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.07)
+            position: fixed
+            top: 0
+        &__item
+            text-decoration: none
+            &:active, &:hover
+                opacity: 75%   
+        &__items li
+            list-style-type: none
+            margin: 10px 5px
+            font-size: 18px
+        &__items
+            display: block
+            position: absolute
+            background-color: #393F47
+            top: -25px
+            padding: 20px
+            width: 30%
+            transition: 0.25s ease
+            right: 0
+            opacity: 0
+            box-shadow: 0px 20px 14px 0px rgba(0, 0, 0, 0.1)
+            z-index: 13
+            transform-origin: top center
+            margin-top: 0
+            &_active 
+                display: block
+                opacity: 1
+        .close
+            position: absolute
+            right: 15px
+            top: 5px
+            font-size: 35px
+            cursor: pointer
+@include respond-to(md)
+    .hamburger
+        &__items
+            width: 40%
+@include respond-to(sm)
+    .hamburger
+        &__items
+            width: 65%
+    .header 
+        &__location-wrapper
+            display: none
+        &__logo
+            border-right: none
+                    
+
+
+    

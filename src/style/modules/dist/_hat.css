@@ -1,12 +1,11 @@
 .hat {
-  height: 100vh;
   background-image: url("./../img/background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .hat .content {
-  height: 100vh;
+  height: calc(100vh - 150px);
   display: flex;
 }
 .hat__info-wrapper {

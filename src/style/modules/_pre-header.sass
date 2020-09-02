@@ -7,3 +7,12 @@
     &__item-description
         &_active
             opacity: 75%
+
+@include respond-to(sm) 
+    .pre-header 
+        & .content 
+            padding: 16px 0
+@media screen and ( max-width: 440px)
+    .pre-header 
+        &__item:nth-child(3)
+            display: none
